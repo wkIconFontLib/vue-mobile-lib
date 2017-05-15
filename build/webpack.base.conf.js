@@ -28,6 +28,12 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.s[a|c]ss$/,
+        loader: 'style!css!sass',
+        include: [resolve('src'), resolve('test')],
+        exclude: /node_modules/
+      },
+      {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
