@@ -1,16 +1,6 @@
 <template>
-  <div class="content">
-    <header class="m-header">
-      <div class="m-header-left">
-        <a href="../../page/iframe.html">
-          <i class="icon iconfont icon-fanhui"></i>
-          <label class="g-header-text">返回</label>
-        </a>
-      </div>
-      <h1 class="m-header-title">表单</h1>
-      <div class="m-header-right"></div>
-    </header>
-    <div class="main">
+  <example :hdTitle="hdTitle">
+    <div slot="main">
       <h1>普通文本框</h1>
       <div class="g-cells g-cells-form">
         <div class="g-cell">
@@ -103,46 +93,20 @@
         </div>
       </div>
     </div>
-  </div>
+  </example>
 </template>
-<script type="text/babel"></script>
+<script type="text/babel">
+  import Example from '../example.vue'
+  export default {
+    data () {
+      return {
+        hdTitle: 'form'
+      }
+    },
+    components: {
+      Example
+    }
+  }
+</script>
 <style scoped lang="scss" rel="stylesheet/scss">
-  @import "~mobile-ui-lib/src/stylesheets/themes/themes.scss";
-  @import "~mobile-ui-lib/src/stylesheets/helps/mixin.scss";
-  // 按钮
-  h1 {
-    font-size: .36rem;
-    font-weight: bold;
-    padding: .3rem;
-    text-align: center;
-  }
-  .m-header {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 99;
-    width: 100%;
-    height: .9rem;
-    box-sizing: border-box;
-    h1 {
-      font-weight: 500;
-      font-size: .36rem;
-      padding: 0;
-    }
-    a {
-      margin: 0;
-    }
-  }
-  .content {
-    height: 100%;
-    @include displayFlex;
-    box-orient:vertical;
-    flex-direction:column;
-    .main {
-      box-sizing: border-box;
-      padding-top: .9rem;
-      @include flex(1);
-      height: 100%;
-    }
-  }
 </style>

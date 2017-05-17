@@ -1,445 +1,447 @@
 <template>
-  <div class="content">
-    <header class="m-header">
-      <div class="m-header-left">
-        <a href="../../page/iframe.html">
-          <i class="icon iconfont icon-fanhui"></i>
-          <label class="g-header-text">返回</label>
-        </a>
+  <example :hdTitle="hdTitle">
+    <div slot="main">
+      <div class="markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+
+          <li>
+            <i class="icon iconfont icon-fanhui"></i>
+            <div class="name">返回</div>
+            <div class="fontclass">.icon-fanhui</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gengduo"></i>
+            <div class="name">更多</div>
+            <div class="fontclass">.icon-gengduo</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-dianhua"></i>
+            <div class="name">电话</div>
+            <div class="fontclass">.icon-dianhua</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-zhankai"></i>
+            <div class="name">展开</div>
+            <div class="fontclass">.icon-zhankai</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-guanbi"></i>
+            <div class="name">关闭</div>
+            <div class="fontclass">.icon-guanbi</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-fuxuankuang"></i>
+            <div class="name">复选框</div>
+            <div class="fontclass">.icon-fuxuankuang</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-quanbudingdan"></i>
+            <div class="name">全部订单</div>
+            <div class="fontclass">.icon-quanbudingdan</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-shouye"></i>
+            <div class="name">首页</div>
+            <div class="fontclass">.icon-shouye</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-llmainpageback"></i>
+            <div class="name">返回</div>
+            <div class="fontclass">.icon-llmainpageback</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gengduo1"></i>
+            <div class="name">更多</div>
+            <div class="fontclass">.icon-gengduo1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-guanbi1"></i>
+            <div class="name">关闭</div>
+            <div class="fontclass">.icon-guanbi1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gengduo2"></i>
+            <div class="name">更多</div>
+            <div class="fontclass">.icon-gengduo2</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-dianhua1"></i>
+            <div class="name">电话</div>
+            <div class="fontclass">.icon-dianhua1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gouwuche"></i>
+            <div class="name">gw购物车</div>
+            <div class="fontclass">.icon-gouwuche</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-shanchu"></i>
+            <div class="name">删除</div>
+            <div class="fontclass">.icon-shanchu</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gengduo3"></i>
+            <div class="name">更多</div>
+            <div class="fontclass">.icon-gengduo3</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-mima"></i>
+            <div class="name">密码</div>
+            <div class="fontclass">.icon-mima</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gouwuche1"></i>
+            <div class="name">购物车</div>
+            <div class="fontclass">.icon-gouwuche1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-tianjia"></i>
+            <div class="name">添加</div>
+            <div class="fontclass">.icon-tianjia</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-dizhi"></i>
+            <div class="name">地址</div>
+            <div class="fontclass">.icon-dizhi</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-fenlei"></i>
+            <div class="name">分类</div>
+            <div class="fontclass">.icon-fenlei</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-search"></i>
+            <div class="name">搜索</div>
+            <div class="fontclass">.icon-search</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-sousuo"></i>
+            <div class="name">搜索</div>
+            <div class="fontclass">.icon-sousuo</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gengduo4"></i>
+            <div class="name">更多</div>
+            <div class="fontclass">.icon-gengduo4</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-guanbi2"></i>
+            <div class="name">关闭</div>
+            <div class="fontclass">.icon-guanbi2</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-cshy-rmb2"></i>
+            <div class="name">退款</div>
+            <div class="fontclass">.icon-cshy-rmb2</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-jingxuan"></i>
+            <div class="name">商品</div>
+            <div class="fontclass">.icon-jingxuan</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-bianji"></i>
+            <div class="name">编辑</div>
+            <div class="fontclass">.icon-bianji</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-tianjia1"></i>
+            <div class="name">添加</div>
+            <div class="fontclass">.icon-tianjia1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-fenlei1"></i>
+            <div class="name">分类</div>
+            <div class="fontclass">.icon-fenlei1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-fuxuankuang1"></i>
+            <div class="name">复选框</div>
+            <div class="fontclass">.icon-fuxuankuang1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-top"></i>
+            <div class="name">返回顶部</div>
+            <div class="fontclass">.icon-top</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-fenlei2"></i>
+            <div class="name">分类</div>
+            <div class="fontclass">.icon-fenlei2</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-dianpu"></i>
+            <div class="name">店铺</div>
+            <div class="fontclass">.icon-dianpu</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-fuwu"></i>
+            <div class="name">服务</div>
+            <div class="fontclass">.icon-fuwu</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-wuliu"></i>
+            <div class="name">物流</div>
+            <div class="fontclass">.icon-wuliu</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-dangan"></i>
+            <div class="name">商品</div>
+            <div class="fontclass">.icon-dangan</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-fanhuidingbu"></i>
+            <div class="name">返回顶部</div>
+            <div class="fontclass">.icon-fanhuidingbu</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gouwuche2"></i>
+            <div class="name">购物车</div>
+            <div class="fontclass">.icon-gouwuche2</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-zhifubao"></i>
+            <div class="name">支付宝</div>
+            <div class="fontclass">.icon-zhifubao</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-liwu"></i>
+            <div class="name">礼物</div>
+            <div class="fontclass">.icon-liwu</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-daifukuan"></i>
+            <div class="name">待付款</div>
+            <div class="fontclass">.icon-daifukuan</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-danxuan"></i>
+            <div class="name">单选</div>
+            <div class="fontclass">.icon-danxuan</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-zhifubao1"></i>
+            <div class="name">支付宝</div>
+            <div class="fontclass">.icon-zhifubao1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-chenggong"></i>
+            <div class="name">成功</div>
+            <div class="fontclass">.icon-chenggong</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-zhifubao2"></i>
+            <div class="name">支付宝</div>
+            <div class="fontclass">.icon-zhifubao2</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-shouqi"></i>
+            <div class="name">收起</div>
+            <div class="fontclass">.icon-shouqi</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-shuoming1"></i>
+            <div class="name">说明</div>
+            <div class="fontclass">.icon-shuoming1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-daishouhuo-copy"></i>
+            <div class="name">待收货</div>
+            <div class="fontclass">.icon-daishouhuo-copy</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-asmkticon0253"></i>
+            <div class="name">显示</div>
+            <div class="fontclass">.icon-asmkticon0253</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-shangpin"></i>
+            <div class="name">商品</div>
+            <div class="fontclass">.icon-shangpin</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-tianjiatupian"></i>
+            <div class="name">添加图片</div>
+            <div class="fontclass">.icon-tianjiatupian</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-shibai"></i>
+            <div class="name">失败</div>
+            <div class="fontclass">.icon-shibai</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-lianxi"></i>
+            <div class="name">联系</div>
+            <div class="fontclass">.icon-lianxi</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-huiyuan"></i>
+            <div class="name">会员</div>
+            <div class="fontclass">.icon-huiyuan</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-chakangengduoicon"></i>
+            <div class="name">查看更多icon</div>
+            <div class="fontclass">.icon-chakangengduoicon</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-icon_lianxi"></i>
+            <div class="name">联系</div>
+            <div class="fontclass">.icon-icon_lianxi</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-chakangengduoicon1"></i>
+            <div class="name">查看更多icon</div>
+            <div class="fontclass">.icon-chakangengduoicon1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-danxuankuang"></i>
+            <div class="name">单选框</div>
+            <div class="fontclass">.icon-danxuankuang</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-shouye-shouye"></i>
+            <div class="name">首页-首页</div>
+            <div class="fontclass">.icon-shouye-shouye</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-gouwuchekong"></i>
+            <div class="name">购物车空</div>
+            <div class="fontclass">.icon-gouwuchekong</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-wuliu1"></i>
+            <div class="name">物流</div>
+            <div class="fontclass">.icon-wuliu1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-beizhu"></i>
+            <div class="name">16备注</div>
+            <div class="fontclass">.icon-beizhu</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-date"></i>
+            <div class="name">日期</div>
+            <div class="fontclass">.icon-date</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-beizhu1"></i>
+            <div class="name">JR-备注</div>
+            <div class="fontclass">.icon-beizhu1</div>
+          </li>
+
+          <li>
+            <i class="icon iconfont icon-activity_fill"></i>
+            <div class="name">activity_fill</div>
+            <div class="fontclass">.icon-activity_fill</div>
+          </li>
+
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+          <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+          <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+          <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+          <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+          <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
       </div>
-      <h1 class="m-header-title">字体图标</h1>
-      <div class="m-header-right"></div>
-    </header>
-    <div class="main markdown">
-      <h1>IconFont 图标</h1>
-      <ul class="icon_lists clear">
-
-        <li>
-          <i class="icon iconfont icon-fanhui"></i>
-          <div class="name">返回</div>
-          <div class="fontclass">.icon-fanhui</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gengduo"></i>
-          <div class="name">更多</div>
-          <div class="fontclass">.icon-gengduo</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-dianhua"></i>
-          <div class="name">电话</div>
-          <div class="fontclass">.icon-dianhua</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-zhankai"></i>
-          <div class="name">展开</div>
-          <div class="fontclass">.icon-zhankai</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-guanbi"></i>
-          <div class="name">关闭</div>
-          <div class="fontclass">.icon-guanbi</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-fuxuankuang"></i>
-          <div class="name">复选框</div>
-          <div class="fontclass">.icon-fuxuankuang</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-quanbudingdan"></i>
-          <div class="name">全部订单</div>
-          <div class="fontclass">.icon-quanbudingdan</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-shouye"></i>
-          <div class="name">首页</div>
-          <div class="fontclass">.icon-shouye</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-llmainpageback"></i>
-          <div class="name">返回</div>
-          <div class="fontclass">.icon-llmainpageback</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gengduo1"></i>
-          <div class="name">更多</div>
-          <div class="fontclass">.icon-gengduo1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-guanbi1"></i>
-          <div class="name">关闭</div>
-          <div class="fontclass">.icon-guanbi1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gengduo2"></i>
-          <div class="name">更多</div>
-          <div class="fontclass">.icon-gengduo2</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-dianhua1"></i>
-          <div class="name">电话</div>
-          <div class="fontclass">.icon-dianhua1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gouwuche"></i>
-          <div class="name">gw购物车</div>
-          <div class="fontclass">.icon-gouwuche</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-shanchu"></i>
-          <div class="name">删除</div>
-          <div class="fontclass">.icon-shanchu</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gengduo3"></i>
-          <div class="name">更多</div>
-          <div class="fontclass">.icon-gengduo3</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-mima"></i>
-          <div class="name">密码</div>
-          <div class="fontclass">.icon-mima</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gouwuche1"></i>
-          <div class="name">购物车</div>
-          <div class="fontclass">.icon-gouwuche1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-tianjia"></i>
-          <div class="name">添加</div>
-          <div class="fontclass">.icon-tianjia</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-dizhi"></i>
-          <div class="name">地址</div>
-          <div class="fontclass">.icon-dizhi</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-fenlei"></i>
-          <div class="name">分类</div>
-          <div class="fontclass">.icon-fenlei</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-search"></i>
-          <div class="name">搜索</div>
-          <div class="fontclass">.icon-search</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-sousuo"></i>
-          <div class="name">搜索</div>
-          <div class="fontclass">.icon-sousuo</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gengduo4"></i>
-          <div class="name">更多</div>
-          <div class="fontclass">.icon-gengduo4</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-guanbi2"></i>
-          <div class="name">关闭</div>
-          <div class="fontclass">.icon-guanbi2</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-cshy-rmb2"></i>
-          <div class="name">退款</div>
-          <div class="fontclass">.icon-cshy-rmb2</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-jingxuan"></i>
-          <div class="name">商品</div>
-          <div class="fontclass">.icon-jingxuan</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-bianji"></i>
-          <div class="name">编辑</div>
-          <div class="fontclass">.icon-bianji</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-tianjia1"></i>
-          <div class="name">添加</div>
-          <div class="fontclass">.icon-tianjia1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-fenlei1"></i>
-          <div class="name">分类</div>
-          <div class="fontclass">.icon-fenlei1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-fuxuankuang1"></i>
-          <div class="name">复选框</div>
-          <div class="fontclass">.icon-fuxuankuang1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-top"></i>
-          <div class="name">返回顶部</div>
-          <div class="fontclass">.icon-top</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-fenlei2"></i>
-          <div class="name">分类</div>
-          <div class="fontclass">.icon-fenlei2</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-dianpu"></i>
-          <div class="name">店铺</div>
-          <div class="fontclass">.icon-dianpu</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-fuwu"></i>
-          <div class="name">服务</div>
-          <div class="fontclass">.icon-fuwu</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-wuliu"></i>
-          <div class="name">物流</div>
-          <div class="fontclass">.icon-wuliu</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-dangan"></i>
-          <div class="name">商品</div>
-          <div class="fontclass">.icon-dangan</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-fanhuidingbu"></i>
-          <div class="name">返回顶部</div>
-          <div class="fontclass">.icon-fanhuidingbu</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gouwuche2"></i>
-          <div class="name">购物车</div>
-          <div class="fontclass">.icon-gouwuche2</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-zhifubao"></i>
-          <div class="name">支付宝</div>
-          <div class="fontclass">.icon-zhifubao</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-liwu"></i>
-          <div class="name">礼物</div>
-          <div class="fontclass">.icon-liwu</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-daifukuan"></i>
-          <div class="name">待付款</div>
-          <div class="fontclass">.icon-daifukuan</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-danxuan"></i>
-          <div class="name">单选</div>
-          <div class="fontclass">.icon-danxuan</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-zhifubao1"></i>
-          <div class="name">支付宝</div>
-          <div class="fontclass">.icon-zhifubao1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-chenggong"></i>
-          <div class="name">成功</div>
-          <div class="fontclass">.icon-chenggong</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-zhifubao2"></i>
-          <div class="name">支付宝</div>
-          <div class="fontclass">.icon-zhifubao2</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-shouqi"></i>
-          <div class="name">收起</div>
-          <div class="fontclass">.icon-shouqi</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-shuoming1"></i>
-          <div class="name">说明</div>
-          <div class="fontclass">.icon-shuoming1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-daishouhuo-copy"></i>
-          <div class="name">待收货</div>
-          <div class="fontclass">.icon-daishouhuo-copy</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-asmkticon0253"></i>
-          <div class="name">显示</div>
-          <div class="fontclass">.icon-asmkticon0253</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-shangpin"></i>
-          <div class="name">商品</div>
-          <div class="fontclass">.icon-shangpin</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-tianjiatupian"></i>
-          <div class="name">添加图片</div>
-          <div class="fontclass">.icon-tianjiatupian</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-shibai"></i>
-          <div class="name">失败</div>
-          <div class="fontclass">.icon-shibai</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-lianxi"></i>
-          <div class="name">联系</div>
-          <div class="fontclass">.icon-lianxi</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-huiyuan"></i>
-          <div class="name">会员</div>
-          <div class="fontclass">.icon-huiyuan</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-chakangengduoicon"></i>
-          <div class="name">查看更多icon</div>
-          <div class="fontclass">.icon-chakangengduoicon</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-icon_lianxi"></i>
-          <div class="name">联系</div>
-          <div class="fontclass">.icon-icon_lianxi</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-chakangengduoicon1"></i>
-          <div class="name">查看更多icon</div>
-          <div class="fontclass">.icon-chakangengduoicon1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-danxuankuang"></i>
-          <div class="name">单选框</div>
-          <div class="fontclass">.icon-danxuankuang</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-shouye-shouye"></i>
-          <div class="name">首页-首页</div>
-          <div class="fontclass">.icon-shouye-shouye</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-gouwuchekong"></i>
-          <div class="name">购物车空</div>
-          <div class="fontclass">.icon-gouwuchekong</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-wuliu1"></i>
-          <div class="name">物流</div>
-          <div class="fontclass">.icon-wuliu1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-beizhu"></i>
-          <div class="name">16备注</div>
-          <div class="fontclass">.icon-beizhu</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-date"></i>
-          <div class="name">日期</div>
-          <div class="fontclass">.icon-date</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-beizhu1"></i>
-          <div class="name">JR-备注</div>
-          <div class="fontclass">.icon-beizhu1</div>
-        </li>
-
-        <li>
-          <i class="icon iconfont icon-activity_fill"></i>
-          <div class="name">activity_fill</div>
-          <div class="fontclass">.icon-activity_fill</div>
-        </li>
-
-      </ul>
-
-      <h2 id="font-class-">font-class引用</h2>
-      <hr>
-
-      <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
-      <p>与unicode使用方式相比，具有如下特点：</p>
-      <ul>
-        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
-        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
-        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
-        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
-      </ul>
-      <p>使用步骤如下：</p>
-      <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
-
-
-      <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
-      <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
-      <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
-      <blockquote>
-        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
-      </blockquote>
     </div>
-  </div>
+  </example>
 </template>
-<script type="text/babel"></script>
+<script type="text/babel">
+  import Example from '../example.vue'
+  export default {
+    data () {
+      return {
+        hdTitle: 'icon'
+      }
+    },
+    components: {
+      Example
+    }
+  }
+</script>
 <style scoped lang="scss" rel="stylesheet/scss">
-  @import "~mobile-ui-lib/src/stylesheets/themes/themes.scss";
-  @import "~mobile-ui-lib/src/stylesheets/helps/mixin.scss";
   *{margin: 0;padding: 0;list-style: none;}
   /*
   KISSY CSS Reset

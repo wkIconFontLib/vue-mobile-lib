@@ -3,9 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import FastClick from 'fastclick'
 Vue.config.productionTip = false
-
+if ('addEventListener' in document) {
+  document.addEventListener('DOMContentLoaded', () => {
+    FastClick.attach(document.body)
+  }, false)
+}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

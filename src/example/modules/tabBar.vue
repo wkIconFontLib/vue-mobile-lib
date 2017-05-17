@@ -1,16 +1,6 @@
 <template>
-  <div class="content">
-    <header class="m-header">
-      <div class="m-header-left">
-        <a href="../../page/iframe.html">
-          <i class="icon iconfont icon-fanhui"></i>
-          <label class="g-header-text">返回</label>
-        </a>
-      </div>
-      <h1 class="m-header-title">标签栏</h1>
-      <div class="m-header-right"></div>
-    </header>
-    <div class="main">
+  <example :hdTitle="hdTitle">
+    <div slot="main" class="header-list">
       <div class="m-tabBar">
         <a class="m-tabBar-item" href="javascript:;">
           <i class="icon iconfont icon-shouye-shouye"></i>
@@ -30,12 +20,22 @@
         </a>
       </div>
     </div>
-  </div>
+  </example>
 </template>
-<script type="text/babel"></script>
+<script type="text/babel">
+  import Example from '../example.vue'
+  export default {
+    data () {
+      return {
+        hdTitle: 'tabBar'
+      }
+    },
+    components: {
+      Example
+    }
+  }
+</script>
 <style scoped lang="scss" rel="stylesheet/scss">
-  // @import "~mobile-ui-lib/src/stylesheets/themes/themes.scss";
-  // @import "~mobile-ui-lib/src/stylesheets/helps/mixin.scss";
   @import "~mobile-ui-lib/src/stylesheets/modules/tabBar.scss";
   body {
     background-color: $bgPrimaryColor;

@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-const Example = resolve => require(['@/example/example'], resolve)
+// const App = resolve => require(['@/app'], resolve)
+const Index = resolve => require(['@/views/index'], resolve)
+// const Example = resolve => require(['@/example/example'], resolve)
 // 基础组件
 const Button = resolve => require(['@/example/global/button'], resolve)
 const Flex = resolve => require(['@/example/global/flex'], resolve)
@@ -11,15 +13,19 @@ const List = resolve => require(['@/example/global/list'], resolve)
 const Header = resolve => require(['@/example/modules/header'], resolve)
 const Search = resolve => require(['@/example/modules/search'], resolve)
 const TabBar = resolve => require(['@/example/modules/tabBar'], resolve)
+const Slider = resolve => require(['@/example/modules/slider'], resolve)
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/example',
-      name: 'example',
-      component: Example,
-      redirect: '/example/button',
+      path: '/',
+      redirect: '/index'
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component: Index,
       children: [
         {
           path: 'button',
@@ -60,6 +66,11 @@ export default new Router({
           path: 'tabBar',
           name: 'tabBar',
           component: TabBar
+        },
+        {
+          path: 'slider',
+          name: 'slider',
+          component: Slider
         }
       ]
     }

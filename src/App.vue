@@ -7,8 +7,13 @@
 <script>
   // 引入 字体图标库
   import 'mobile-ui-lib/src/stylesheets/global/iconfont.scss'
+  // 引入动画库
+  import 'animate.css'
   export default {
-    name: 'app'
+    data () {
+      return {
+      }
+    }
   }
 </script>
 <style lang="scss" rel="stylesheet/scss">
