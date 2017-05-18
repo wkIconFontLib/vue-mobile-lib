@@ -97,7 +97,7 @@
       /**
        * swipeSliders  轮播图参数配置
        * type Array
-       * 参数详细配置可参考http://www.swiper.com.cn/api/pagination/2014/1217/68.html
+       * 参数详细配置可参考：http://www.swiper.com.cn/api/pagination/2014/1217/68.html
        */
       swipeOption: {
         type: Object,
